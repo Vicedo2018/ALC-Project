@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <script src="jquery-3.3.1.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+</head>
+<body class="wrapper">
+    <header>
+        <img src="Logo.png" alt="Pixel Art Maker Logo">
+    </header>
+
+    <main>
+        <h2>Choose Grid Size</h2>
+        
+        <section class="Grid-Size">
+            <form id="sizePicker">
+                Grid Height:
+                <input type="number" id="inputHeight" name="height" min="1" value="1">
+                Grid Width : 
+                <input type="number" id="inputWidth" name="width" min="1" value="1">
+                <input type="submit" id="submit">
+                <input type="reset" id="reset">
+            </form>
+            
+            Pick A Color:
+            <input type="color" id="colorPicker">
+
+        </section>
+
+        <h2>Design Canvas</h2>
+        <div class="canvas-holder">
+            <table id="pixelCanvas"></table>
+        </div>
+        
+    </main>
+    
+    <footer>
+        Developed By EdifixStudios, 2018
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
